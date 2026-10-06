@@ -88,13 +88,13 @@
                     TT
                 </div>
                 <div>
-                    <span class="font-bold text-lg tracking-wide text-white group-hover:text-cyan-400 transition-colors">Terrence Tabora</span>
+                    <span class="font-bold text-lg tracking-wide text-white group-hover:text-cyan-400 transition-colors">Terrence Jade O. Tabora</span>
                     <span class="block text-xs text-cyan-400 code-font">&lt;BSIT / Embedded AI&gt;</span>
                 </div>
             </a>
 
             <!-- Desktop Nav Links -->
-            <nav class="hidden xl:flex items-center space-x-6 text-sm font-medium">
+            <nav class="hidden xl:flex items-center space-x-5 text-sm font-medium">
                 <a href="#home" class="hover:text-cyan-400 transition-colors">Home</a>
                 <a href="#profile" class="hover:text-cyan-400 transition-colors">Profile</a>
                 <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
@@ -137,10 +137,7 @@
 
     <!-- 1. HOME SECTION -->
     <section id="home" class="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden">
-        <!-- Matrix / Binary Animated Canvas -->
         <canvas id="matrix-canvas"></canvas>
-
-        <!-- Ambient glow gradients -->
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute bottom-1/4 right-10 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -151,7 +148,7 @@
             </div>
 
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-4">
-                Hi, I'm <span class="bg-gradient-to-r from-cyan-400 via-emerald-400 to-blue-500 bg-clip-text text-transparent">Terrence Jade Tabora</span>
+                Hi, I'm <span class="bg-gradient-to-r from-cyan-400 via-emerald-400 to-blue-500 bg-clip-text text-transparent">Terrence Jade O. Tabora</span>
             </h1>
 
             <div class="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-300 h-16 flex items-center justify-center">
@@ -170,8 +167,8 @@
                 <a href="#resume" class="px-8 py-3.5 rounded-xl bg-cardBg border border-borderCol text-gray-200 font-semibold text-sm sm:text-base hover:bg-white/5 transition-all">
                     <i class="fa-solid fa-file-arrow-down mr-2 text-cyan-400"></i> View Resume
                 </a>
-                <a href="#contact" class="px-8 py-3.5 rounded-xl bg-cardBg border border-borderCol text-gray-200 font-semibold text-sm sm:text-base hover:bg-white/5 transition-all">
-                    <i class="fa-solid fa-envelope mr-2 text-emerald-400"></i> Get in Touch
+                <a href="https://www.linkedin.com/in/terrence-tabora-b82855319" target="_blank" class="px-8 py-3.5 rounded-xl bg-cardBg border border-borderCol text-gray-200 font-semibold text-sm sm:text-base hover:bg-white/5 transition-all">
+                    <i class="fa-brands fa-linkedin mr-2 text-blue-400"></i> LinkedIn Profile
                 </a>
             </div>
 
@@ -207,7 +204,6 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <!-- Profile Image / Terminal Graphic -->
                 <div class="lg:col-span-5 bg-cardBg border border-borderCol rounded-2xl p-6 glow-cyan relative overflow-hidden">
                     <div class="flex items-center justify-between pb-4 mb-4 border-b border-borderCol">
                         <div class="flex space-x-2">
@@ -232,7 +228,6 @@
                     </div>
                 </div>
 
-                <!-- Bio & Statement -->
                 <div class="lg:col-span-7 space-y-6">
                     <div class="p-6 rounded-2xl bg-cardBg border border-borderCol space-y-4">
                         <h3 class="text-xl font-bold text-white flex items-center">
@@ -246,7 +241,6 @@
                         </p>
                     </div>
 
-                    <!-- Professional Statement Quote Box -->
                     <div class="p-6 rounded-2xl bg-gradient-to-r from-cyan-950/40 to-emerald-950/40 border border-cyan-500/30 relative">
                         <div class="absolute -top-3 left-6 px-3 bg-cyan-500 text-black text-xs font-bold rounded code-font">PROFESSIONAL STATEMENT</div>
                         <p class="text-gray-200 italic font-medium leading-relaxed mt-2">
@@ -268,7 +262,6 @@
                 <div class="w-20 h-1 bg-gradient-to-r from-cyan-500 to-emerald-400 mx-auto mt-3 rounded-full"></div>
             </div>
 
-            <!-- Skill Category Tabs -->
             <div class="flex flex-wrap justify-center gap-2 mb-10">
                 <button onclick="filterSkills('all')" class="skill-tab active-tab px-5 py-2.5 rounded-xl font-semibold text-sm transition-all bg-cyan-500 text-black shadow-md">All Skills</button>
                 <button onclick="filterSkills('languages')" class="skill-tab px-5 py-2.5 rounded-xl font-semibold text-sm transition-all bg-cardBg border border-borderCol text-gray-300 hover:text-white">Programming Languages</button>
@@ -277,10 +270,7 @@
                 <button onclick="filterSkills('ai')" class="skill-tab px-5 py-2.5 rounded-xl font-semibold text-sm transition-all bg-cardBg border border-borderCol text-gray-300 hover:text-white">AI & Vision Frameworks</button>
             </div>
 
-            <!-- Skills Grid -->
             <div id="skills-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <!-- Category 1: Languages -->
                 <div class="skill-card p-6 rounded-2xl bg-cardBg border border-borderCol hover:border-cyan-500/50 transition-all" data-category="languages">
                     <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl mb-4">
                         <i class="fa-solid fa-code"></i>
@@ -295,7 +285,6 @@
                     </ul>
                 </div>
 
-                <!-- Category 2: Tools -->
                 <div class="skill-card p-6 rounded-2xl bg-cardBg border border-borderCol hover:border-cyan-500/50 transition-all" data-category="tools">
                     <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl mb-4">
                         <i class="fa-solid fa-toolbox"></i>
@@ -310,7 +299,6 @@
                     </ul>
                 </div>
 
-                <!-- Category 3: Hardware -->
                 <div class="skill-card p-6 rounded-2xl bg-cardBg border border-borderCol hover:border-cyan-500/50 transition-all" data-category="hardware">
                     <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xl mb-4">
                         <i class="fa-solid fa-microchip"></i>
@@ -325,7 +313,6 @@
                     </ul>
                 </div>
 
-                <!-- Category 4: AI Frameworks -->
                 <div class="skill-card p-6 rounded-2xl bg-cardBg border border-borderCol hover:border-cyan-500/50 transition-all" data-category="ai">
                     <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl mb-4">
                         <i class="fa-solid fa-brain"></i>
@@ -338,7 +325,6 @@
                         <li class="flex items-center justify-between bg-white/5 px-3 py-2 rounded-lg"><span>Edge AI Pipelines</span> <span class="text-purple-400 code-font">Optimization</span></li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </section>
@@ -354,8 +340,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Project 1 -->
                 <div class="bg-cardBg border border-borderCol rounded-2xl overflow-hidden flex flex-col hover:border-cyan-500/50 transition-all group">
                     <div class="h-48 bg-gradient-to-br from-cyan-950 via-gray-900 to-slate-900 relative p-6 flex flex-col justify-between overflow-hidden">
                         <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#06b6d4_1px,transparent_1px)] [background-size:16px_16px]"></div>
@@ -385,7 +369,6 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
                 <div class="bg-cardBg border border-borderCol rounded-2xl overflow-hidden flex flex-col hover:border-emerald-500/50 transition-all group">
                     <div class="h-48 bg-gradient-to-br from-emerald-950 via-gray-900 to-slate-900 relative p-6 flex flex-col justify-between overflow-hidden">
                         <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]"></div>
@@ -415,7 +398,6 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="bg-cardBg border border-borderCol rounded-2xl overflow-hidden flex flex-col hover:border-blue-500/50 transition-all group">
                     <div class="h-48 bg-gradient-to-br from-blue-950 via-gray-900 to-slate-900 relative p-6 flex flex-col justify-between overflow-hidden">
                         <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]"></div>
@@ -444,7 +426,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -555,7 +536,6 @@
                 <div class="w-20 h-1 bg-gradient-to-r from-cyan-500 to-emerald-400 mx-auto mt-3 rounded-full"></div>
             </div>
 
-            <!-- Resume Download & Preview Container -->
             <div class="max-w-4xl mx-auto bg-cardBg border border-borderCol rounded-2xl p-8 sm:p-12 shadow-2xl relative">
                 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-8 border-b border-borderCol gap-4">
                     <div>
@@ -568,7 +548,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-                    <!-- Education -->
                     <div class="space-y-6">
                         <h4 class="text-lg font-bold text-white flex items-center">
                             <i class="fa-solid fa-graduation-cap text-cyan-400 mr-2"></i> Education
@@ -580,7 +559,6 @@
                         </div>
                     </div>
 
-                    <!-- Core Competencies -->
                     <div class="space-y-6">
                         <h4 class="text-lg font-bold text-white flex items-center">
                             <i class="fa-solid fa-star text-emerald-400 mr-2"></i> Core Competencies
@@ -776,6 +754,18 @@
                     <div class="p-6 rounded-2xl bg-cardBg border border-borderCol space-y-4">
                         <div class="flex items-center space-x-4">
                             <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xl">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-gray-400 code-font">LinkedIn Profile</div>
+                                <a href="https://www.linkedin.com/in/terrence-tabora-b82855319" target="_blank" class="text-cyan-400 hover:underline font-medium text-sm sm:text-base">View LinkedIn Profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-cardBg border border-borderCol space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xl">
                                 <i class="fa-brands fa-github"></i>
                             </div>
                             <div>
@@ -806,7 +796,6 @@
                         </button>
                     </form>
 
-                    <!-- Success Message Box -->
                     <div id="form-success" class="hidden absolute inset-0 bg-cardBg/95 backdrop-blur-md rounded-2xl flex flex-col items-center justify-center text-center p-8 space-y-4">
                         <div class="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-3xl">
                             <i class="fa-solid fa-check"></i>
@@ -869,16 +858,12 @@
             <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2 rounded-lg bg-white/5">
                 <i class="fa-solid fa-xmark text-xl"></i>
             </button>
-            <div id="modal-content" class="space-y-6">
-                <!-- Dynamically populated -->
-            </div>
+            <div id="modal-content" class="space-y-6"></div>
         </div>
     </div>
 
     <!-- JavaScript for Interactivity -->
     <script>
-
-        // Mobile menu toggle
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -886,14 +871,12 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Close mobile menu on link click
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
         });
 
-        // Typing animation for hero titles
         const titles = [
             "Software Developer",
             "Embedded AI Engineer",
@@ -918,7 +901,7 @@
             let typeSpeed = isDeleting ? 50 : 100;
 
             if (!isDeleting && charIndex === currentTitle.length) {
-                typeSpeed = 2000; // Pause at end
+                typeSpeed = 2000;
                 isDeleting = true;
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
@@ -931,7 +914,6 @@
 
         window.addEventListener('load', typeWriter);
 
-        // Matrix canvas animation background
         const canvas = document.getElementById('matrix-canvas');
         const ctx = canvas.getContext('2d');
 
@@ -971,7 +953,6 @@
         }
         setInterval(drawMatrix, 30);
 
-        // Skills Filtering
         function filterSkills(category) {
             const cards = document.querySelectorAll('.skill-card');
             const tabs = document.querySelectorAll('.skill-tab');
@@ -992,7 +973,6 @@
             });
         }
 
-        // Project Modals Data
         const projectData = {
             project1: {
                 title: "Offline AI Vision & Obstacle Detection System",
@@ -1065,7 +1045,6 @@
             }
         });
 
-        // Contact Form Submission Simulation
         function handleContactSubmit(event) {
             event.preventDefault();
             const successBox = document.getElementById('form-success');
@@ -1077,12 +1056,12 @@
             document.getElementById('form-success').classList.add('hidden');
         }
 
-        // Resume Download Simulation
         function downloadResume() {
             const resumeText = `TERRENCE JADE O. TABORA
 BSIT Graduate - Datamex College of Saint Adeline
 Target Role: Software Developer / Embedded AI Engineer
 Location: Metro Manila, Philippines
+LinkedIn: https://www.linkedin.com/in/terrence-tabora-b82855319
 
 PROFESSIONAL STATEMENT:
 "I am a BSIT graduate with skills in Python and C++ programming, embedded AI vision systems, and hardware-software integration. I am interested in pursuing a career as a Software Developer."
@@ -1103,11 +1082,9 @@ PROJECTS:
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'Terrence_Jade_Tabora_Resume.txt';
-            document.body.appendChild(a);
+            a.download = 'Terrence_Jade_O_Tabora_Resume.txt';
             a.click();
             window.URL.revokeObjectURL(url);
-            document.body.removeChild(a);
         }
     </script>
 </body>
