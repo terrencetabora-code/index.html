@@ -135,13 +135,21 @@
         </div>
     </header>
 
-    <!-- 1. HOME SECTION -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden">
+    <!-- 1. HOME SECTION (With Portfolio Image at the Top) -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-32 pb-16 overflow-hidden">
         <canvas id="matrix-canvas"></canvas>
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute bottom-1/4 right-10 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            
+            <!-- PORTFOLIO FEATURED IMAGE (Upper portion only, bottom part removed) -->
+            <div class="mb-10 max-w-2xl mx-auto">
+                <div class="rounded-2xl overflow-hidden border border-borderCol shadow-2xl glow-cyan bg-transparent p-2">
+                    <img src="Gemini_Generated_Image_fp3qikfp3qikfp3q.jpg" alt="Terrence Tabora Portfolio Image" class="w-full h-auto object-cover rounded-xl mix-blend-screen filter contrast-125" style="object-fit: cover; object-position: top; max-height: 480px;">
+                </div>
+            </div>
+
             <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs sm:text-sm font-medium mb-6">
                 <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
                 <span>Datamex College of Saint Adeline — BSIT Graduate</span>
@@ -599,42 +607,73 @@
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-cyan-400 text-sm font-semibold tracking-widest uppercase code-font">&lt;Section 07&gt;</span>
                 <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Certificates & Milestones</h2>
-                <p class="text-gray-400 mt-2">Academic achievements and technical project milestones.</p>
+                <p class="text-gray-400 mt-2">Academic achievements and technical training certificates.</p>
                 <div class="w-20 h-1 bg-gradient-to-r from-cyan-500 to-emerald-400 mx-auto mt-3 rounded-full"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-6 rounded-2xl bg-cardBg border border-borderCol space-y-4 hover:border-cyan-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl">
-                        <i class="fa-solid fa-award"></i>
+            <!-- Certificates Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Certificate 1: Unlocking ROI -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-borderCol space-y-4 hover:border-cyan-500/50 transition-all flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="overflow-hidden rounded-xl border border-borderCol bg-[#090d16] aspect-[4/3] relative">
+                            <img src="5b078d1e-dcba-499e-97dd-3ca45d839c43.jpg" alt="Unlocking ROI Tied Up in AI-Powered Development" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-cardBg/80 via-transparent to-transparent opacity-60"></div>
+                        </div>
+                        <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-lg">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Unlocking ROI Tied Up in AI-Powered Development</h3>
+                        <p class="text-xs text-cyan-400 code-font">BrightTALK / Black Duck • August 21, 2026</p>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Attended webinar presented by Steven Zimmerman (DevOps Security Solutions Manager) focusing on ROI and security in AI-driven development.
+                        </p>
                     </div>
-                    <h3 class="text-lg font-bold text-white">BSIT Academic Milestone</h3>
-                    <p class="text-xs text-cyan-400 code-font">Datamex College of Saint Adeline</p>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        Successfully completed coursework and rigorous practical examinations across software engineering, database administration, and networking.
-                    </p>
+                    <button onclick="openCertModal('5b078d1e-dcba-499e-97dd-3ca45d839c43.jpg', 'Unlocking ROI Tied Up in AI-Powered Development', 'BrightTALK / Black Duck', 'August 21, 2026', 'Steven Zimmerman, DevOps Security Solutions Manager, Black Duck', '41 of 41 minutes')" class="w-full py-2.5 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 font-semibold text-sm hover:bg-cyan-500 hover:text-black transition-all">
+                        <i class="fa-solid fa-expand mr-2"></i> View Certificate
+                    </button>
                 </div>
 
-                <div class="p-6 rounded-2xl bg-cardBg border border-borderCol space-y-4 hover:border-emerald-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl">
-                        <i class="fa-solid fa-microchip"></i>
+                <!-- Certificate 2: How Generative AI is Changing the SDLC -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-borderCol space-y-4 hover:border-emerald-500/50 transition-all flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="overflow-hidden rounded-xl border border-borderCol bg-[#090d16] aspect-[4/3] relative">
+                            <img src="e1aa3564-3b13-491d-9495-0f1ad95163d2.jpg" alt="How Generative AI is Changing the SDLC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-cardBg/80 via-transparent to-transparent opacity-60"></div>
+                        </div>
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-lg">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">How Generative AI is Changing the SDLC</h3>
+                        <p class="text-xs text-emerald-400 code-font">BrightTALK • August 20, 2026</p>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Attended webinar presented by Jamie Boote (Associate Principal Consultant) exploring the impact of generative AI on software development life cycles.
+                        </p>
                     </div>
-                    <h3 class="text-lg font-bold text-white">Embedded Systems Innovator</h3>
-                    <p class="text-xs text-emerald-400 code-font">Hardware-Software Integration</p>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        Successfully prototyped and deployed 3+ functional hardware-software systems including AI vision trackers and automated sorting machines.
-                    </p>
+                    <button onclick="openCertModal('e1aa3564-3b13-491d-9495-0f1ad95163d2.jpg', 'How Generative AI is Changing the SDLC', 'BrightTALK', 'August 20, 2026', 'Jamie Boote, Associate Principal Consultant', '102 of 52 minutes')" class="w-full py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-semibold text-sm hover:bg-emerald-500 hover:text-black transition-all">
+                        <i class="fa-solid fa-expand mr-2"></i> View Certificate
+                    </button>
                 </div>
 
-                <div class="p-6 rounded-2xl bg-cardBg border border-borderCol space-y-4 hover:border-blue-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xl">
-                        <i class="fa-solid fa-certificate"></i>
+                <!-- Certificate 3: Real AI, Real Security -->
+                <div class="p-6 rounded-2xl bg-cardBg border border-borderCol space-y-4 hover:border-blue-500/50 transition-all flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="overflow-hidden rounded-xl border border-borderCol bg-[#090d16] aspect-[4/3] relative">
+                            <img src="c13f66f1-7680-437b-ae14-93ee85c0ecd6.jpg" alt="Real AI, Real Security: Moving Past the POC Phase" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-cardBg/80 via-transparent to-transparent opacity-60"></div>
+                        </div>
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-lg">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Real AI, Real Security: Moving Past the POC Phase</h3>
+                        <p class="text-xs text-blue-400 code-font">BrightTALK • August 20, 2026</p>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Attended webinar presented by Andrew Bolster (Senior R&D Manager at Black Duck) on transitioning AI systems beyond proof-of-concept securely.
+                        </p>
                     </div>
-                    <h3 class="text-lg font-bold text-white">Python & C++ Proficiency</h3>
-                    <p class="text-xs text-blue-400 code-font">Applied Programming</p>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        Demonstrated advanced coding capabilities through complex algorithms, OpenCV integration, and microcontroller firmware development.
-                    </p>
+                    <button onclick="openCertModal('c13f66f1-7680-437b-ae14-93ee85c0ecd6.jpg', 'Real AI, Real Security: Moving Past the POC Phase', 'BrightTALK', 'August 20, 2026', 'Andrew Bolster, Senior R&D Manager at Black Duck', '47 of 49 minutes')" class="w-full py-2.5 rounded-xl bg-blue-500/10 border border-blue-500/30 text-blue-400 font-semibold text-sm hover:bg-blue-500 hover:text-black transition-all">
+                        <i class="fa-solid fa-expand mr-2"></i> View Certificate
+                    </button>
                 </div>
             </div>
         </div>
@@ -862,6 +901,16 @@
         </div>
     </div>
 
+    <!-- Certificate Modal -->
+    <div id="cert-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-cardBg border border-borderCol rounded-2xl max-w-4xl w-full p-6 sm:p-8 relative shadow-2xl max-h-[95vh] overflow-y-auto">
+            <button onclick="closeCertModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2 rounded-lg bg-white/5 z-10">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div id="cert-modal-content" class="space-y-6"></div>
+        </div>
+    </div>
+
     <!-- JavaScript for Interactivity -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
@@ -1042,6 +1091,41 @@
         modal.addEventListener('click', (e) => {
             if (e.target === modal) {
                 closeProjectModal();
+            }
+        });
+
+        // Certificate Modal Logic
+        const certModal = document.getElementById('cert-modal');
+        const certModalContent = document.getElementById('cert-modal-content');
+
+        function openCertModal(imageSrc, title, issuer, date, presenter, duration) {
+            certModalContent.innerHTML = `
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-400 text-xs font-semibold border border-cyan-500/35">Verified Certificate</span>
+                        <span class="text-xs text-gray-400 code-font">${issuer}</span>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white">${title}</h3>
+                    <div class="rounded-xl overflow-hidden border border-borderCol bg-black">
+                        <img src="${imageSrc}" alt="${title}" class="w-full h-auto object-contain max-h-[60vh] mx-auto">
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm bg-white/5 p-4 rounded-xl border border-borderCol">
+                        <div><span class="text-gray-400">Date:</span> <strong class="text-white">${date}</strong></div>
+                        <div><span class="text-gray-400">Duration/Time:</span> <strong class="text-cyan-400">${duration}</strong></div>
+                        <div class="sm:col-span-2"><span class="text-gray-400">Presenter:</span> <strong class="text-emerald-400">${presenter}</strong></div>
+                    </div>
+                </div>
+            `;
+            certModal.classList.remove('hidden');
+        }
+
+        function closeCertModal() {
+            certModal.classList.add('hidden');
+        }
+
+        certModal.addEventListener('click', (e) => {
+            if (e.target === certModal) {
+                closeCertModal();
             }
         });
 
