@@ -88,7 +88,7 @@
                     TT
                 </div>
                 <div>
-                    <span class="font-bold text-lg tracking-wide text-white group-hover:text-cyan-400 transition-colors">Terrence Tabora</span>
+                    <span class="font-bold text-lg tracking-wide text-white group-hover:text-cyan-400 transition-colors">Terrence Jade O. Tabora</span>
                     <span class="block text-xs text-cyan-400 code-font">&lt;BSIT / Embedded AI&gt;</span>
                 </div>
             </a>
@@ -151,7 +151,7 @@
             </div>
 
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-4">
-                Hi, I'm <span class="bg-gradient-to-r from-cyan-400 via-emerald-400 to-blue-500 bg-clip-text text-transparent">Terrence Jade Tabora</span>
+                Hi, I'm <span class="bg-gradient-to-r from-cyan-400 via-emerald-400 to-blue-500 bg-clip-text text-transparent">Terrence Jade O. Tabora</span>
             </h1>
 
             <div class="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-300 h-16 flex items-center justify-center">
@@ -1103,11 +1103,9 @@ PROJECTS:
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'Terrence_Jade_Tabora_Resume.txt';
-            document.body.appendChild(a);
+            a.download = 'Terrence_Jade_O_Tabora_Resume.txt';
             a.click();
             window.URL.revokeObjectURL(url);
-            document.body.removeChild(a);
         }
     </script>
 </body>
